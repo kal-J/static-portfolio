@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Eric Kalujja | Fullstack developer</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Portfolio of Eric Kalujja - Fullstack developer. My prowess ranges from turning 
+	designs into highly responsive user interfaces to nailing down the backend logic and 
+	database designs needed to achieve full blown functionality of applications."
+  />
+  <meta name="keywords" content="web development, React, Node.js, Firebase" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Eric Kalujja" />
+  <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.html" />
+  <link rel="stylesheet" href="style.css" />
+  <!--[if lt IE 9]><link rel="stylesheet" href="style-ie8.css" /><![endif]-->
+  <script>
+    document.cookie =
+      "resolution=" + Math.max(screen.width, screen.height) + "; path=/";
+  </script>
+  <script type="text/javascript">
+    (function () {
+      var config = {
+        kitId: "rpv0oma",
+        scriptTimeout: 3000,
+      };
+      var h = document.getElementsByTagName("html")[0];
+      h.className += " wf-loading";
+      var t = setTimeout(function () {
+        h.className = h.className.replace(/(\s|^)wf-loading(\s|$)/g, " ");
+        h.className += " wf-inactive";
+      }, config.scriptTimeout);
+      var tk = document.createElement("script"),
+        d = false;
+      tk.src = "//use.typekit.net/" + config.kitId + ".js";
+      tk.type = "text/javascript";
+      tk.async = "true";
+      tk.onload = tk.onreadystatechange = function () {
+        var a = this.readyState;
+        if (d || (a && a != "complete" && a != "loaded")) return;
+        d = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config);
+        } catch (b) {}
+      };
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(tk, s);
+    })();
+
+    (function (e, b) {
+      if (!b.__SV) {
+        var a, f, i, g;
+        window.mixpanel = b;
+        a = e.createElement("script");
+        a.type = "text/javascript";
+        a.async = !0;
+        a.src =
+          ("https:" === e.location.protocol ? "https:" : "http:") +
+          "//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";
+        f = e.getElementsByTagName("script")[0];
+        f.parentNode.insertBefore(a, f);
+        b._i = [];
+        b.init = function (a, e, d) {
+          function f(b, h) {
+            var a = h.split(".");
+            2 == a.length && ((b = b[a[0]]), (h = a[1]));
+            b[h] = function () {
+              b.push([h].concat(Array.prototype.slice.call(arguments, 0)));
+            };
+          }
+          var c = b;
+          "undefined" !== typeof d ? (c = b[d] = []) : (d = "mixpanel");
+          c.people = c.people || [];
+          c.toString = function (b) {
+            var a = "mixpanel";
+            "mixpanel" !== d && (a += "." + d);
+            b || (a += " (stub)");
+            return a;
+          };
+          c.people.toString = function () {
+            return c.toString(1) + ".people (stub)";
+          };
+          i = "disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(
+            " "
+          );
+          for (g = 0; g < i.length; g++) f(c, i[g]);
+          b._i.push([a, e, d]);
+        };
+        b.__SV = 1.2;
+      }
+    })(document, window.mixpanel || []);
+    mixpanel.init("5f4db832227ea387772de79ba387f5f8");
+  </script>
+</head>
+
+<body>
+  <header role="banner">
+    <div class="page-wrap clearfix">
+      <a href="index.html" style="margin: 1em">
+        <img style="width: 75px; height: auto" src="/kal-web.png" alt="" />
+      </a>
+
+      <nav id="main-nav" role="navigation">
+        <ul>
+          <li><a href="#portfolio-content">Portfolio</a></li>
+          <li><a href="#recent-work">Recent Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li><a href="">Blog</a></li> -->
+        </ul>
+      </nav>
+      <!-- Main nav -->
+      <a href="#nav" id="toggle"
+        ><span aria-hidden="true" class="icon-menu"></span
+      ></a>
+    </div>
+    <!-- Page wrap -->
+  </header>
+
+  <section id="home" data-speed="10" data-type="background">
+    <div class="page-wrap">
+      <h1>Eric Kalujja</h1>
+      <h2>
+        Hi, I'm a Fullstack Developer based in Uganda. My prowess ranges from
+        turning designs into highly responsive user interfaces to nailing down
+        the backend logic and database designs needed to achieve full blown
+        functionality of applications.
+      </h2>
+      <a class="button check-work" href="#portfolio-content">Check my work</a>
+    </div>
+    <!-- Page wrap -->
+  </section>
+  <!-- Home -->
+
+  <section id="portfolio-desc">
+    <div class="page-wrap">
+      <h2>Portfolio</h2>
+      <p>Below you can see some projects I've been working on lately.</p>
+    </div>
+    <!-- Page Wrap -->
+  </section>
+  <!-- Portfolio Desc -->
+
+  <section id="portfolio-content" role="main">
+    <article class="portfolio" role="article">
+      <div class="page-wrap clearfix">
+        <div class="info-container">
+          <h3>CallBoda</h3>
+          <hr />
+          <p>
+            A phone based ride hailing and Boda-boda sharing Android App. <br />
+            <a href="https://play.google.com/store/apps/details?id=com.callboda"
+              >Get App on the playstore</a
+            >
+            <br />
+            I developed it using React-Native and Firebase for the backend.
+          </p>
+          <p
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <a
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                float: none;
+                margin: 1em;
+                padding: 0.3em;
+                width: 30%;
+              "
+              class="button on-behance"
+              href="https://github.com/kal-J/callBoda"
+              >on GitHub</a
+            >
+          </p>
+        </div>
+        <!-- Info Container -->
+
+        <figure>
+          <img
+            src="images/portfolio/call-boda.png"
+            alt="callBoda Android app"
+          />
+        </figure>
+      </div>
+      <!-- Page wrap -->
+    </article>
+    <!-- Portfolio -->
+
+    <article class="portfolio" role="article">
+      <div class="page-wrap clearfix">
+        <div class="info-container">
+          <h3>LCS MEMORIES</h3>
+          <hr />
+          <p>
+            Its December 2020, the world has been hit by covid-19. By God's
+            Grace, I'm done with my final semester exams and awaiting
+            Graduation. Looking through my phone and laptop, I'm overwhelmed by
+            the number of photos I find. These photos, taken from the time I was
+            at campus (Lira University) awaken so many awesome memories. I think
+            of the best way to share these memories with all the people I went
+            to campus with and this is how this project comes along. <br />
+            It is built using React &amp; Firebase
+          </p>
+
+          <a
+            class="button on-behance"
+            href="https://github.com/kal-J/lcs-memories"
+            >on GitHub</a
+          >
+          <a class="button see-online" href="https://lcs-memories.netlify.app/"
+            >See it online</a
+          >
+        </div>
+        <!-- Info Container -->
+
+        <figure>
+          <img src="images/portfolio/lcs-memories.png" alt="LCS MEMORIES" />
+        </figure>
+      </div>
+      <!-- Page wrap -->
+    </article>
+    <!-- Portfolio -->
+
+    <article class="portfolio" role="article">
+      <div class="page-wrap clearfix">
+        <div class="info-container clearfix">
+          <h3>BULK SMS SENDER</h3>
+          <hr />
+          <p>
+            A web application for sending bulk sms. Built using React, Node,
+            Firebase &amp; Twilio
+          </p>
+
+          <a
+            class="button on-behance"
+            href="https://github.com/kal-J/bulk-sms-sender"
+            >on GitHub</a
+          >
+          <a class="button see-online" href="https://ugbulksms.netlify.app/"
+            >See it online</a
+          >
+        </div>
+        <!-- Info Container -->
+        <figure>
+          <img
+            src="images/portfolio/bulk-sms-sender.png"
+            alt="BULK SMS SENDER"
+          />
+        </figure>
+      </div>
+      <!-- Page wrap -->
+    </article>
+    <!-- Portfolio -->
+
+    <!-- Portfolio -->
+
+    <!-- Portfolio -->
+  </section>
+  <!-- Portfolio content -->
+
+  <section id="about" role="main">
+    <div class="page-wrap">
+      <h2>About me</h2>
+      <p>
+        I'm a Fullstack developer, I have earned a Bachelor's Degree in Computer
+        Science from Lira University and so far counting 2 years of professional
+        experience. I'm interested in developing for the web and I love working
+        with all things JavaScript.
+      </p>
+    </div>
+    <!-- Page wrap -->
+  </section>
+  <!-- About -->
+
+  <section id="contact" role="main">
+    <div class="page-wrap">
+      <h2>Alright.., let’s bring <br />your project to life</h2>
+      <p>
+        If you like what I do and have some cool project to work on, just send
+        me direct message and I will be happy to discuss more.
+      </p>
+
+      <a id="send-mail" class="button" href="mailto:kharljay15@gmail.com"
+        ><span aria-hidden="true" class="icon-mail"></span>Get in touch</a
+      >
+      <div class="social-links-container">
+        <ul id="social-links" class="clearfix">
+          <li><a href="https://twitter.com/kal_code">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Page wrap -->
+  </section>
+  <!-- Contact -->
+
+  <footer>
+    <div class="page-wrap">
+      <p id="copy">
+        <span
+          >© 2021 <a href="mailto:kharljay15@gmail.com">Eric Kalujja</a></span
+        >
+      </p>
+
+      <div class="follow-links-container">
+        <ul id="follow-links">
+          <li id="follow-twitter">
+            <a href="https://twitter.com/kal_code"
+              ><span aria-hidden="true" class="icon-twitter"></span>Follow me on
+              twitter</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- Follow Links Container -->
+    </div>
+    <!-- Page wrap -->
+  </footer>
+  <script src="../code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script src="js/retina.js"></script>
+  <!--[if IE 7]><script src="js/lt-ie7.js"></script><![endif]-->
+  <script src="js/all-desktop.js"></script>
+</body>
